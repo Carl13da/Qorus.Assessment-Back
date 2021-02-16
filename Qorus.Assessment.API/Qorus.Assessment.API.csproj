@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qorus.Assessment.Application\Qorus.Assessment.Application.csproj" />
+    <ProjectReference Include="..\Qorus.Assessment.Data\Qorus.Assessment.Data.csproj" />
+    <ProjectReference Include="..\Qorus.Assessment.Domain\Qorus.Assessment.Domain.csproj" />
+    <ProjectReference Include="..\Qorus.Assessment.IoC\Qorus.Assessment.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
